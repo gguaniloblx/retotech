@@ -29,7 +29,7 @@ public class CitizenServiceImpl implements CitizenService {
 
   @Override
   public Optional<Citizen> findById(Integer id) {
-    return Optional.empty();
+    return citizenRepository.findById(id);
   }
 
   @Override
